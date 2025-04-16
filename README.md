@@ -80,3 +80,18 @@ The next steps are the same as in the previous example. :)
 ### Default HTTP package
 
 ![](./static/flame-golang-http.svg)
+
+
+<hr>
+
+## References
+
+Important information:
+
+```
+The colors aren't significant, and are usually picked at random to be warm colors (other meaningful palettes are supported). This visualization was called a "flame graph" as it was first used to show what is hot on-CPU, and, it looked like flames. It is also interactive: mouse over the SVGs to reveal details, and click to zoom
+```
+
+* https://pkg.go.dev/net/http/pprof
+
+* https://www.brendangregg.com/FlameGraphs/cpuflamegraphs.html
