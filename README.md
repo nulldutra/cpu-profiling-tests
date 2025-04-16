@@ -71,6 +71,55 @@ The next steps are the same as in the previous example. :)
 
 <hr>
 
+## Rust Axum Framework
+
+In this case we need the perf to installed:
+
+### ArchLinux
+
+```sh
+sudo pacman -S linux-tools
+```
+
+### Fedora
+
+```sh
+sudo dnf install kernel-tools
+```
+
+### Debian / Ubuntu
+
+```sh
+sudo apt install linux-perf
+```
+
+### Go to the example directory:
+
+```
+cd example-rust-axum
+```
+
+### Install the flamegraph:
+
+```sh
+cargo install flamegraph
+```
+
+### Adjusted perf_event_paranoid setting in the kernel:
+
+```sh
+sysctl -w kernel.perf_event_paranoid=-1
+```
+
+### Run the flameGraph:
+
+```
+export CARGO_PROFILE_RELEASE_DEBUG=true
+cargo flamegraph -o flame-rust-axum.svg
+```
+
+<hr>
+
 ## FlameGraph results:
 
 ### Gin framework
@@ -81,6 +130,9 @@ The next steps are the same as in the previous example. :)
 
 ![](./static/flame-golang-http.svg)
 
+### Rust Axum
+
+![](./static/flame-rust-axum.svg)
 
 <hr>
 
