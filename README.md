@@ -68,3 +68,15 @@ go run main.go
 ```
 
 The next steps are the same as in the previous example. :)
+
+<hr>
+
+## FlameGraph results:
+
+### Gin framework
+
+![](./static/flame-golang-gin.svg)
+
+### Default HTTP package
+
+![](./static/flame-golang-http.svg)
