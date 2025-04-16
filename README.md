@@ -1,4 +1,4 @@
-# performance-test
+# CPU profiling tests
 
 stressing out my own projects. And maybe yours too. :D
 
