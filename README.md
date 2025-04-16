@@ -73,7 +73,7 @@ The next steps are the same as in the previous example. :)
 
 ## Rust Axum Framework
 
-In this case we need the perf to installed:
+In this case we need the perf installed:
 
 ### ArchLinux
 
